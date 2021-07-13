@@ -1,0 +1,45 @@
+/* Copa American style */
+
+body{
+    font-family: 'Kanit', sans-serif;
+    margin: 0%;
+}
+
+/* --Header Style-- */
+
+.main-header{
+    background-color: rgb(64, 64, 241);
+    display: flex;
+    padding: 60px;
+    
+    
+    
+}
+.header-div-1 h1{
+    font-size: 40px;
+}
+
+.header-font-1{
+    color: white;
+}
+.header-font-2{
+    color: tomato;
+}
+.live-button{
+    background-color: rgb(131, 38, 88);
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    border-radius: 10px;
+    font-weight: 600; 
+    border: 1px solid black;
+    
+}
+.live-button :hover{
+   
+}
+.header-div-2 img{
+    width: 550px;
+    border-radius: 140px;
+    margin-left: 250px;
+}
