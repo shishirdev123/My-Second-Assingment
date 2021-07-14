@@ -16,8 +16,16 @@ body{
     
 }
 .header-div-1 h1{
-    font-size: 40px;
+    font-size: 80px;
+    margin: 121px, 0px, 27px, 156px;
 }
+.header-div-1{
+    width: 50%;
+   
+   
+    
+}
+
 
 .header-font-1{
     color: white;
@@ -32,21 +40,28 @@ body{
     padding: 6px;
     border-radius: 10px;
     font-weight: 600; 
-    border: 1px solid black;
+    
 } 
+.live-button:hover{
+    background-color: coral;
+    color: darkmagenta;
+}
 
-   .header-div-2 img{
-    width: 550px;
+.header-div-2 img{
+    width: 500px;
     border-radius: 140px;
-    margin-left: 250px;
+    margin-top: 200px;
 }
 
 /* Main Section, Player list Style */
- .container .player-1, img{
+.player-1, img{
     width: 300px;
     height: 256px;
+    margin: 15px 15px 0 15px;
 }
 .shadow-box {
+    width: 330px;
+    height: 474px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
@@ -58,6 +73,79 @@ body{
     margin: 150px;
     margin-top: 70px;
 }
-.player-detail, h2, p{
-    padding: 15px;
+.player-detail, p{
+    
+    color: #6C6C6C;
+    padding: 0 15px 15px 15px;
+    font-weight: normal;
+    font-size: 16px;
+}
+.player-detail, h2{
+   
+    
+    margin-left: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Footer section start */
+
+.last-part-img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 475px;
+    margin-right: 481px;
+}
+.last-part img{
+    width: 483.87px;
+    height: 110px;
+  
+}
+.logo{
+    display: flex;
+    color: #969BAB; ;
+    font-size: 32px;
+    margin-left: 631px;
+    margin-right: 638px;
+
+}
+.logo i{
+    
+    flex-direction: row;
+    margin-right: 6px;
+  
+}
+footer p{
+    margin-left: 600px;
+ 
+}
+/* Footer-section end */
+
+/* Media-quearies */
+/* For mobile device */
+
+@media only screen and (max-width:688px) {
+    /* Header section */
+    .main-header{
+        background-color: darkmagenta;
+        grid-template-columns: repeat(1, 1fr);
+        
+        display: flex;
+        padding: 0px;
+    }
+    .header-div-1 .header-font-1{
+        font-size: 30px;
+    }
+    .header-div-2{
+        width: 5%;
+        display: flex;
+        margin-left: 0%;
+    }
+
+    /* Main Section */
+
+    .Container, .last-part, footer{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+    }
 }
