@@ -9,9 +9,11 @@ body{
 
 .main-header{
     background-color: rgb(64, 64, 241);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 50px;
     margin-bottom: 40px;
+    box-sizing: border-box;
     
     
 }
@@ -49,7 +51,7 @@ body{
 
 .header-div-2 img{
     width: 500px;
-    border-radius: 140px;
+    border-radius: 10px;
     margin-top: 200px;
 }
 
@@ -90,55 +92,58 @@ body{
 
 /* Footer section start */
 
-.last-part-img{
+/* footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 475px;
-    margin-right: 481px;
-}
-.last-part img{
-    width: 483.87px;
-    height: 110px;
-  
-}
-.logo{
-    display: flex;
-    color: #969BAB; ;
-    font-size: 32px;
-    margin-left: 631px;
-    margin-right: 638px;
+    border-top: 1px solid #c7c7c7;
+    padding: 30px 0;
+  }
+  footer img {
+    width: 480px;
+  }
+  .footer__icons i {
+    color: #969bab;
+    margin: 0 14px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  .footer__icons i:hover{
+      color:#e02c6d;;
+  }
+  footer p {
+    font-size: 18px;
+    color: #000;
+    margin: 20px 0;
+  }
 
-}
-.logo i{
-    
-    flex-direction: row;
-    margin-right: 6px;
-  
-}
-footer p{
-    margin-left: 600px;
- 
-}
 /* Footer-section end */
 
 /* Media-quearies */
 /* For mobile device */
 
-@media only screen and (max-width:688px) {
+@media only screen and (max-width:480px) {
     /* Header section */
     .main-header{
         background-color: darkmagenta;
         grid-template-columns: repeat(1, 1fr);
+        padding: 0 20px;
         
-        display: flex;
-        padding: 0px;
+        
     }
-    .header-div-1 .header-font-1{
+    
+     .header-div-1 .header-font-1{
         font-size: 30px;
+    
     }
-    .header-div-2{
-        width: 5%;
-        display: flex;
+    .header-div-1 .live-button:hover{
+        background-color: darkorange;
+    }
+    .header-div-2 img{
+        width: 300px;
+        border-radius: 5px;
         margin-left: 0%;
     }
 
@@ -147,5 +152,9 @@ footer p{
     .Container, .last-part, footer{
         grid-template-columns: repeat(1, 1fr);
         margin-left: 0;
+    }
+    footer img{
+        width: 200px;
+        height: 80px;
     }
 }
